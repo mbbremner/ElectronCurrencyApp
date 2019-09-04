@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Hello World!</title>
+      <link rel="stylesheet" href="../assets/css/main.css">
+    </head>
+    <body>
+
+        <div id = "appWrapper">
+            <div class = "topBanner"> 
+                <div id = "titleDiv">Currency Tracker $$</div>
+                <div id="unitTestBtn">
+                <button onclick="myFunction()" class="dropbtn2">Unit Tests</button>
+                        <div id="myDropdownTest" class="dropdown-content2">
+                          <a href="#home" id = "PairTest">(1) Pair Test Test</a>
+                          <a href="#about" id = "GUITest">(2) GUI Unit Test</a>
+                          <a href="#contact" id = "FMTest">(3) File Manager Unit Test</a>
+                          <a href="#contact" id = "ParserTest">(4) ParserUnit Test</a>
+                        </div>
+
+                </div>
+            </div>
+
+            <div id = "testResultsDiv">
+
+
+                    <div id = "closeResults">X</div>
+                    <div id = "Results"></div>
+
+            </div>
+
+            <div class="menuRow", id= "TOPTOP">
+                <div id = "newItem">
+                        <div id = "newItemText"> Add</div>
+                        <button id = "addNewBtn"> + </button>
+                </div>
+                <div id = "clearAll">
+                        <div id = "clearText"> Clear </div>
+                        <button id = "clearBtn"> - </button>
+                </div>
+                <div id = "saveList">
+                        <div id = "saveText"> Save </div>
+                        <button id = "saveBtn"> S </button>
+                </div>
+
+                <div id = "onoffDiv"> 
+                        <div id = "onoffText"> Tracking: </div>
+                        <button id = "onoffBtn"> Off  </button>
+                </div>
+
+            </div>
+
+            <div id = "rowWrapper"></div>
+
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+            <div class = "placeHolder"></div>
+        </div>
+
+        <script src="index.js"></script>
+
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdownTest").classList.toggle("show");
+        }
+        </script>
+
+    </body>
+  </html>
+

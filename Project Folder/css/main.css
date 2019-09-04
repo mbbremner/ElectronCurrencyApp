@@ -1,0 +1,607 @@
+/*===================================================================*/
+/*----------------------------  MAIN.css  ------------------------------
+/*===================================================================*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+
+/* Lowest layer of GUI*/ 
+
+body {
+    background: #262626;
+    color:#fff;
+    font-family: 'Montserrat';
+    margin:0;
+    height: 905px;
+    width: 664px;
+}
+
+
+/* Primary wrapper inside Body*/
+#appWrapper{
+
+    width: 100%;
+    height: 884px;
+    /* background-color: rgb(84, 86, 88); */
+    background-color: rgb(58, 58, 58);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    margin-left: 2%;
+    border-top: 2px solid white;
+    margin-top: 10px;
+}
+
+#rowWrapper{
+
+    display: block;
+    width: 100%;
+    background-color: rgb(84, 86, 88);
+
+}
+
+.placeHolder{
+
+    width: 100%;
+    height: 75px;
+    padding-bottom: 1px;
+    border-bottom: 1px dashed white;
+}
+
+
+#testResultsDiv{
+
+    display: none;
+    width: 50%;
+    height: 110px;
+    margin-left: 25%;
+    /* border-bottom: 2px solid white; */
+    background-color: #6d6e7b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+#Results{
+
+    width: 85%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    float: right;
+
+
+}
+
+#closeResults{
+
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+
+
+}
+
+#closeResults:hover{
+
+    color: #de7575;
+
+}
+
+.show3{
+
+    display: block;
+}
+
+/* Long Rectangle containers for price item */ 
+.row {
+
+    width:100%;
+    height:75px;
+    margin-top: 0px;
+
+    display: grid;
+    grid-template-columns: 40% 35% 25%;
+    align-items: flex-start;
+
+    background:rgb(84, 86, 88);
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+
+/* Row of options like add/del/save */ 
+.menuRow{
+
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    background: rgb(76, 79, 80);
+    /* background: rgb(93, 94, 95); */
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+#newItem{
+
+    width:100%;
+    height:100%;
+
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+#newItemText{
+    
+    width: 55%;
+    height: 70%;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#addNewBtn{
+    width:50px;
+    height:100%;
+    float:right;
+    font-size: 36px;
+    background:rgba(116, 223, 130, 0.774);
+}
+
+.topBanner{    
+    display: grid;
+    grid-template-columns: 75% 25%;
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    /* text-align: center; */
+    /* padding-top: 20px; */
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: #353535;
+    /* margin-top: 20px; */
+}
+
+#titleDiv{
+
+    width: 100%;
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    /* border-bottom: 2px solid rgb(255, 255, 255); */
+    background: #353535;
+
+}
+
+
+.textDiv{
+
+    width: 100%;
+    height: 80%;
+    margin-top: 12px;
+
+}
+#onoffText{
+
+    width: 80%;
+    float: right;
+    text-align: center;
+    /* background-color: rgb(199, 107, 107); */
+    margin-top: 10px;
+
+}
+
+#onoffDiv{
+
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border-left: 2px solid white;
+    /*background-color:rgb(199, 107, 107);*/
+
+}
+
+#onoffBtn{
+    
+    width: 20%;
+    height: 50px;
+    /* padding-top: 12px; */
+    background-color: rgb(199, 107, 107);
+    border-right: 2px solid white;
+    font-size: 22px;
+}
+
+#onoffBtn:hover{
+
+    opacity: 0.5;
+
+}
+
+.addNew{
+    width: 100%;
+}
+
+.halfWidth{
+    width: 100%;
+    height: 100%;
+}
+
+#addNewBtn:hover {
+    opacity:0.5;
+}
+
+#clearAll{
+
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    /* grid-template-columns: 80% 20%; */
+    display: inline-flex;
+    border-right: 2px solid rgb(255, 255, 255);
+
+}
+
+#clearText{
+
+    width: 65%;
+    height: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#clearBtn{
+
+    width: 50px;
+    height: 100%;
+    float: right;
+    font-size: 36px;
+    background: rgb(199, 107, 107);
+    padding: 0;
+
+}
+
+#clearBtn:hover{
+
+    opacity:0.5;
+}
+
+#saveList{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-right: 2px solid white;
+
+}
+
+#saveText{
+
+    text-align: center;
+    width: 65%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+#saveBtn{
+
+    width: 50px;
+    height: 100%;
+    background: rgb(82, 99, 175);
+    float: right;
+    font-size: 22px;
+}
+
+#saveBtn:hover{
+
+    opacity: 0.5; 
+    /*border: 2px solid rgb(131, 23, 23);*/
+}
+
+/* ROW CONTENTS: LEFT, MIDDLE, & RIGHT CONTAINERS*/ 
+
+/*Left Container and Stuff inside it */
+.left-container {
+    height: 100%;
+    font-size: 10px;
+    width: 100%;
+    background: #353535;
+    text-align: center;
+    border-right: 1px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+}
+
+/* Middle Container and Stuff inside it */
+.middle-container {
+
+    height:100%;
+    width: 100%;
+    background:#353535;
+
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: flex-start;
+
+    border-left: 2px solid white;
+}
+
+.targetInField{
+
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-top: 17px;
+    TEXT-ALIGN: center;
+    background-color: #fbeded;
+    color: #353535;
+    border-bottom: 1px solid white;
+    border-right: none;
+    border-left: 1px solid white;
+    border-top: none;
+}
+
+.setTargetButton{
+
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid rgb(255, 255, 255);
+    background-color :#353535;
+}
+
+.setTargetButton:hover{
+
+    background-color: rgb(93, 94, 95);
+
+}
+
+/* Right Container and Stuff inside it */
+.right-container{
+
+    height:100%;
+    width: 100%;
+    background:#353535;
+
+}
+.subtext {
+
+width: 100%;
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+    height: 90%;
+    margin-top: 10%;
+}
+
+img {
+    width: 20px;
+}
+
+.prices {
+    width:100%;
+    font-size: 18px;
+    height: 90%;
+    margin-top: 5%;
+}
+
+.targetdiv{
+
+    width:100%;
+    height:50%;
+}
+
+.biddiv{
+
+    width:100%;
+    height:20px;
+}
+
+.price{
+
+    width: 100%;
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+    height: 90%;
+    margin-top: 10%;
+
+}
+.delbutton{
+
+    /* width: 25px; */
+    height: 30%;
+    color: #dacbcb;
+    text-align: left;
+    font-size: 22px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+.delbutton:hover{
+
+    color: #de7575;
+}
+
+button {
+    background:#353535;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+
+    
+}
+
+select {
+
+  width:100%;  
+}
+
+/*DROPDOWN*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #353535;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+
+    padding: 0;
+    border-left: 2px solid white;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+   background-color: rgb(93, 94, 95);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height:100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 200px;
+    overflow-y: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    height: 20px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    position: relative;
+
+}
+
+/*.dropdown-content a:hover{
+
+    background-color: #ae5959;
+
+    
+}*/
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(235, 157, 157)}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+#unitTestBtn{
+
+    width: 100%;
+    height: 100%;
+    background: #262626;
+
+}
+
+#unitTestBtn:hover{
+
+    background: #2f2f38;
+
+
+}
+
+#PairTest{
+
+    width:100%;
+
+}
+#GuiManagerTest{
+
+    width:100%;
+
+
+}
+#FileManagerTest{
+
+    width:100%;
+
+}
+#ParserTest{
+
+    width:100%;
+
+
+}
+
+
+
+
+.dropbtn2:hover, .dropbtn2:focus {
+    background-color: rgb(93, 94, 95);
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn2 {
+
+    width: 100%;
+    height: 100%;
+    background: #353535;
+    /* border-top: 2px solid white; */
+    border-left: 2px solid white;
+}
+
+.dropdown-content2 {
+
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 140px;
+    width: 168px;
+    overflow-y: hidden;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content2 a:hover {
+    background-color:rgb(235, 157, 157);
+}
+
+
+
+.dropdown2 a:hover {background-color: #ddd;}
+
+.show2 {display: block;}
